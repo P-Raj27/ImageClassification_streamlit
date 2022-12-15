@@ -1,0 +1,8 @@
+pandas
+streamlit
+numpy
+baase64
+cv2
+pywt
+json
+joblib
