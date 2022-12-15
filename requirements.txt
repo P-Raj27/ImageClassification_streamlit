@@ -3,6 +3,6 @@ streamlit
 numpy
 opencv-python-headless
 pybase64
-joblib
+joblib=1.1.1
 PyWavelets
 scikit-learn
