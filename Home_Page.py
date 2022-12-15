@@ -58,8 +58,8 @@ class celeb_image_classifier():
 
     
     def get_cropped_image_if_2_eyes(self,image_path,image_base64_data):
-            face_cascade = cv2.CascadeClassifier('/Users/pratikraj/Desktop/ImageClassification/haarCascades/haarcascade_frontalface_default.xml')
-            eye_cascade = cv2.CascadeClassifier('/Users/pratikraj/Desktop/ImageClassification/haarCascades/haarcascade_eye.xml')
+            face_cascade = cv2.CascadeClassifier('./haarCascades/haarcascade_frontalface_default.xml')
+            eye_cascade = cv2.CascadeClassifier('./haarCascades/haarcascade_eye.xml')
 
             if image_path:
                 img = cv2.imread(image_path)
