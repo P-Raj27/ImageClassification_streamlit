@@ -1,7 +1,6 @@
 pandas
 streamlit
 numpy
-cv2
-base64
-json
+opencv-python
+pybase64
 joblib
