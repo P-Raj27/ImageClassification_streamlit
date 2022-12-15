@@ -4,3 +4,4 @@ numpy
 opencv-python-headless
 pybase64
 joblib
+PyWavelets
