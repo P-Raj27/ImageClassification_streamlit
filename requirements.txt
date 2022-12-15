@@ -1,6 +1,6 @@
 pandas
 streamlit
 numpy
-opencv-python
+opencv-python-headless
 pybase64
 joblib
