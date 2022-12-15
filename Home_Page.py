@@ -58,8 +58,8 @@ class celeb_image_classifier():
 
     
     def get_cropped_image_if_2_eyes(self,image_path,image_base64_data):
-            face_cascade = cv2.CascadeClassifier('/Users/pratikraj/Desktop/ImageClassification/haarCascades/haarcascade_frontalface_default.xml')
-            eye_cascade = cv2.CascadeClassifier('/Users/pratikraj/Desktop/ImageClassification/haarCascades/haarcascade_eye.xml')
+            face_cascade = cv2.CascadeClassifier('./haarCascades/haarcascade_frontalface_default.xml')
+            eye_cascade = cv2.CascadeClassifier('./haarCascades/haarcascade_eye.xml')
 
             if image_path:
                 img = cv2.imread(image_path)
@@ -112,7 +112,7 @@ class celeb_image_classifier():
          #   __class_name_to_number = json.load(f)
           #  __class_number_to_name = {v:k for k,v in __class_name_to_number.items()}
 
-        with open('/Users/pratikraj/Desktop/ImageClassification/artifacts/saved_model.pkl', 'rb') as f:
+        with open('./artifacts/saved_model.pkl', 'rb') as f:
             __model = joblib.load(f)
         print("loading saved artifacts...done")
         return __model
@@ -120,7 +120,7 @@ class celeb_image_classifier():
 
     def convert_number_to_name(self,predicted_number):
 
-        with open('/Users/pratikraj/Desktop/ImageClassification/artifacts/celeb_name_number.json') as json_file:
+        with open('./artifacts/celeb_name_number.json') as json_file:
             data = json.load(json_file)
         name = data[str(predicted_number)]["name"]
         url = data[str(predicted_number)]["url"]
