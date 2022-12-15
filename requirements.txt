@@ -1,7 +1,7 @@
 pandas
 streamlit
 numpy
-baase64
+base64
 cv2
 pywt
 json
