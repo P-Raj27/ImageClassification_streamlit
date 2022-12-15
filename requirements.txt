@@ -1,3 +1,7 @@
 pandas
 streamlit
 numpy
+cv2
+base64
+json
+joblib
